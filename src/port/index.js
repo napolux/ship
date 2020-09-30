@@ -4,10 +4,10 @@ const STORAGE_MAX_SIZE = 5;
 const PORT_MAX_SIZE = 12;
 
 export class Port {
-  constructor() {
-    this.ship = null;
-    this.storage = 0;
-    this.train = 0;
+  constructor(ship, storage, train) {
+    this.ship = (ship > 0 || ship === 0) ? ship : null;
+    this.storage = storage || 0;
+    this.train = train || 0;
   }
 
   show() {
