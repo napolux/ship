@@ -13,5 +13,8 @@
   "type": "module",
   "devDependencies": {
     "eslint": "^7.10.0"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3"
   }
 }
