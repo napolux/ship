@@ -70,13 +70,14 @@ export class Port {
     status = status.reverse();
 
     // slicing and filtering!
-    // slice 0, 3 -> ship
-    // slice 4, 8 -> storage
-    // slice 9, 11 -> train
-    const train = status.slice(9, 12);
-    const storage = status.slice(4, 9);
+    // slice 0, 4 -> ship
+    // slice 4, 9 -> storage
+    // slice 9, 12 -> train
     const ship = status.slice(0, 4);
+    const storage = status.slice(4, 9);
+    const train = status.slice(9, 12);
 
+    // counting only the "X"s
     this.train = train.filter(x => x === 'X').length
     this.storage = storage.filter(x => x === 'X').length
     this.ship = ship.filter(x => x === 'X').length
