@@ -1,0 +1,17 @@
+{
+  "name": "ship",
+  "version": "1.0.0",
+  "description": "Don't spend your entire life building a ship, without ever tasting the salt of the ocean.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "Francesco Napoletano",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^7.10.0"
+  }
+}
